@@ -594,7 +594,8 @@
                 Zip = New ADVL_Utilities_Library_1.ZipComp
                 Zip.ArchivePath = Main.Project.DataLocn.Path
                 Zip.SelectFile() 'Show the SelectFile form.
-                Zip.SelectFileForm.ApplicationName = Main.Project.ApplicationName
+                'Zip.SelectFileForm.ApplicationName = Main.Project.ApplicationName
+                Zip.SelectFileForm.ApplicationName = Main.Project.Application.Name
                 Zip.SelectFileForm.SettingsLocn = Main.Project.SettingsLocn
                 Zip.SelectFileForm.Show()
                 Zip.SelectFileForm.RestoreFormSettings()
@@ -1976,7 +1977,7 @@
         txtStructureFileName.Text = Trim(txtStructureFileName.Text)
 
         'Check if a file name has been specified:
-        If txtStructureFileName.Text = "" Then
+        If Trim(txtStructureFileName.Text) = "" Then
             Main.Message.AddWarning("Structure settings not saved. The structure file name is blank." & vbCrLf)
             Beep()
             Exit Sub
@@ -1984,7 +1985,8 @@
 
         'Replace any spaces in the file name with underscore characters:
         If txtStructureFileName.Text.Contains(" ") Then
-            txtStructureFileName.Text = txtStructureFileName.Text.Replace(" ", "_")
+            'txtStructureFileName.Text = txtStructureFileName.Text.Replace(" ", "_")
+            txtStructureFileName.Text = Trim(txtStructureFileName.Text)
         End If
 
         SaveStructure(txtStructureFileName.Text)
@@ -2735,7 +2737,8 @@
             Select Case cmbNewDocumentItemType.SelectedItem.ToString
 
                 Case "Collection"
-                    trvDocument.Nodes.Add(txtNewDocumentItemName.Text.Replace(" ", "_") & ".Coll", txtNewDocumentItemName.Text, 2, 3)
+                    'trvDocument.Nodes.Add(txtNewDocumentItemName.Text.Replace(" ", "_") & ".Coll", txtNewDocumentItemName.Text, 2, 3)
+                    trvDocument.Nodes.Add(Trim(txtNewDocumentItemName.Text) & ".Coll", txtNewDocumentItemName.Text, 2, 3)
 
             End Select
         Else
@@ -2745,7 +2748,8 @@
                     'NOTE: Libraries are not used in the Document Structure. !!!!!!!!!!!!!!
                     'This code segment will be removed later
                 Case "Library"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Libr"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Libr"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Libr"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2755,7 +2759,8 @@
                     'NOTE: Collections are not used in the Document Structure. !!!!!!!!!!!!!!
                     'This code segment will be removed later
                 Case "Collection"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Coll"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Coll"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Coll"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2766,7 +2771,8 @@
                     'Books are stored in the main Information Library.
                     'This code segment will be removed later
                 Case "Book"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Book"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Book"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Book"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2776,7 +2782,8 @@
                     'NOTE: Rich Text Format Document is now used in the Document Structure to store Book Sections. !!!!!!!!!!!!!!
                     'This code segment will be removed later
                 Case "  Section"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Sect"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Sect"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Sect"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2787,7 +2794,8 @@
                     'Applications are stored in the main Information Library.
                     'This code segment will be removed later
                 Case "Application"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Appl"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Appl"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Appl"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2799,7 +2807,8 @@
                     'This code segment will be removed later
                 Case "  Code"
                     'Dim NewFileName As String = txtNewLibraryItemFileName.Text.Replace(" ", "_") & ".Srce"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Code"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Code"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Code"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2810,7 +2819,8 @@
                    'NOTE: Rich Text Format Document is now used in the Document Structure to store forms. !!!!!!!!!!!!!!
                     'This code segment will be removed later
                 Case "  Form"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Form"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Form"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Form"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2821,7 +2831,8 @@
                      'Picture Albums are stored in the main Information Library.
                      'This code segment will be removed later
                 Case "Picture Album"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Pics"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Pics"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Pics"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2829,7 +2840,8 @@
                     End If
                         'CreatePicAlbumFile(NewFileName, txtNewLibraryItemName.Text, txtNewLibraryItemDescription.Text)
                 Case "  Picture"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Pict"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Pict"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Pict"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2837,7 +2849,8 @@
                     End If
                         'CreatePictureFile(NewFileName, txtNewLibraryItemName.Text, txtNewLibraryItemDescription.Text)
                 Case "Note"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Note"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Note"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Note"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2846,7 +2859,8 @@
                     End If
                         'CreateNoteFile(NewFileName, txtNewLibraryItemName.Text, txtNewLibraryItemDescription.Text)
                 Case "Process"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Proc"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Proc"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Proc"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2858,7 +2872,8 @@
                 Case "  Page"
 
                 Case "Rich Text Format Document"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".rtf"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".rtf"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".rtf"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2869,7 +2884,8 @@
                     End If
 
                 Case "Update"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Update"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".Update"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".Update"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2880,7 +2896,8 @@
                     End If
 
                 Case "Modification List"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".ModList"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".ModList"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".ModList"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else
@@ -2891,7 +2908,8 @@
                     End If
 
                 Case "To Do List"
-                    Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".ToDoList"
+                    'Dim NewFileName As String = txtNewDocumentItemFileName.Text.Replace(" ", "_") & ".ToDoList"
+                    Dim NewFileName As String = Trim(txtNewDocumentItemFileName.Text) & ".ToDoList"
                     If Main.Project.DataFileExists(NewFileName) Then
                         Main.Message.AddWarning("File name: " & NewFileName & " already exists!" & vbCrLf)
                     Else

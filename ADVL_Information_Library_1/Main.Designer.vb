@@ -29,26 +29,8 @@ Partial Class Main
         Me.btnMessages = New System.Windows.Forms.Button()
         Me.btnAppInfo = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.txtLastUsed = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtCreationDate = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtDataLocationPath = New System.Windows.Forms.TextBox()
-        Me.txtDataLocationType = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtSettingsLocationPath = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtSettingsLocationType = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtProjectType = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtProjectDescription = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtProjectName = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.btnProject = New System.Windows.Forms.Button()
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.trvLibrary = New System.Windows.Forms.TreeView()
@@ -59,18 +41,21 @@ Partial Class Main
         Me.Label46 = New System.Windows.Forms.Label()
         Me.txtLibraryVersion = New System.Windows.Forms.TextBox()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.pbIconDefaultLicense = New System.Windows.Forms.PictureBox()
         Me.txtDefaultLicenseFile = New System.Windows.Forms.TextBox()
         Me.Label42 = New System.Windows.Forms.Label()
         Me.btnEditDefaultLicense = New System.Windows.Forms.Button()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.rtbDefaultLicenseNotice = New System.Windows.Forms.RichTextBox()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.pbIconDefaultCopyright = New System.Windows.Forms.PictureBox()
         Me.txtDefaultCopyrightFile = New System.Windows.Forms.TextBox()
         Me.btnEditDefaultCopyright = New System.Windows.Forms.Button()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label41 = New System.Windows.Forms.Label()
         Me.txtDefaultCopyrightSummary = New System.Windows.Forms.TextBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.pbIconDefaultAuthor = New System.Windows.Forms.PictureBox()
         Me.txtDefaultAuthorFile = New System.Windows.Forms.TextBox()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
@@ -97,18 +82,21 @@ Partial Class Main
         Me.txtItemType = New System.Windows.Forms.TextBox()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.pbIconLicense = New System.Windows.Forms.PictureBox()
         Me.txtLicenseFile = New System.Windows.Forms.TextBox()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.btnViewLicense = New System.Windows.Forms.Button()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.rtbLicenseNotice = New System.Windows.Forms.RichTextBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.pbIconCopyright = New System.Windows.Forms.PictureBox()
         Me.txtCopyrightFile = New System.Windows.Forms.TextBox()
         Me.btnViewCopyright = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.txtCopyrightSummary = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.pbIconAuthor = New System.Windows.Forms.PictureBox()
         Me.txtAuthorFile = New System.Windows.Forms.TextBox()
         Me.Label39 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -137,22 +125,39 @@ Partial Class Main
         Me.TabPage13 = New System.Windows.Forms.TabPage()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.rbDateTime = New System.Windows.Forms.RadioButton()
+        Me.pbIconDateTime = New System.Windows.Forms.PictureBox()
         Me.rbProcess = New System.Windows.Forms.RadioButton()
+        Me.pbIconProcess = New System.Windows.Forms.PictureBox()
         Me.rbWebpage = New System.Windows.Forms.RadioButton()
+        Me.pbIconWebpage = New System.Windows.Forms.PictureBox()
         Me.rbWebsite = New System.Windows.Forms.RadioButton()
+        Me.pbIconWebsite = New System.Windows.Forms.PictureBox()
         Me.rbForm = New System.Windows.Forms.RadioButton()
+        Me.pbIconForm = New System.Windows.Forms.PictureBox()
         Me.rbNote = New System.Windows.Forms.RadioButton()
+        Me.pbIconNote = New System.Windows.Forms.PictureBox()
         Me.rbLibrary = New System.Windows.Forms.RadioButton()
+        Me.pbIconLib = New System.Windows.Forms.PictureBox()
         Me.rbAdvlApplication = New System.Windows.Forms.RadioButton()
+        Me.pbIconAdvl = New System.Windows.Forms.PictureBox()
         Me.rbExcel = New System.Windows.Forms.RadioButton()
+        Me.pbIconExcel = New System.Windows.Forms.PictureBox()
         Me.rbPowerPoint = New System.Windows.Forms.RadioButton()
+        Me.pbIconPowerPoint = New System.Windows.Forms.PictureBox()
         Me.rbPicture = New System.Windows.Forms.RadioButton()
+        Me.pbIconPicture = New System.Windows.Forms.PictureBox()
         Me.rbAlbum = New System.Windows.Forms.RadioButton()
+        Me.pbIconAlbum = New System.Windows.Forms.PictureBox()
         Me.rbCode = New System.Windows.Forms.RadioButton()
+        Me.pbIconCode = New System.Windows.Forms.PictureBox()
         Me.rbApplication = New System.Windows.Forms.RadioButton()
         Me.rbBookSection = New System.Windows.Forms.RadioButton()
         Me.rbBook = New System.Windows.Forms.RadioButton()
         Me.rbCollection = New System.Windows.Forms.RadioButton()
+        Me.pbIconApplication = New System.Windows.Forms.PictureBox()
+        Me.pbIconBookSection = New System.Windows.Forms.PictureBox()
+        Me.pbIconBook = New System.Windows.Forms.PictureBox()
+        Me.pbIconCollection = New System.Windows.Forms.PictureBox()
         Me.txtNewLibraryItemFileName = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -191,7 +196,47 @@ Partial Class Main
         Me.btnNewLibrary = New System.Windows.Forms.Button()
         Me.btnOpenSelectedLibrary = New System.Windows.Forms.Button()
         Me.lstLibraries = New System.Windows.Forms.ListBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.btnOpenAppDir = New System.Windows.Forms.Button()
+        Me.btnOpenSystem = New System.Windows.Forms.Button()
+        Me.txtSystemLocationType = New System.Windows.Forms.TextBox()
+        Me.txtSystemPath = New System.Windows.Forms.TextBox()
+        Me.btnOpenData = New System.Windows.Forms.Button()
+        Me.btnOpenSettings = New System.Windows.Forms.Button()
+        Me.chkConnect = New System.Windows.Forms.CheckBox()
+        Me.btnOpenProject = New System.Windows.Forms.Button()
+        Me.txtProjectPath = New System.Windows.Forms.TextBox()
+        Me.txtProNetName = New System.Windows.Forms.TextBox()
+        Me.txtParentProject = New System.Windows.Forms.TextBox()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.btnParameters = New System.Windows.Forms.Button()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.txtCurrentDuration = New System.Windows.Forms.TextBox()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.txtTotalDuration = New System.Windows.Forms.TextBox()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.txtLastUsed = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtCreationDate = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtDataPath = New System.Windows.Forms.TextBox()
+        Me.txtDataLocationType = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtSettingsPath = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtSettingsLocationType = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtProjectType = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtProjectDescription = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtProjectName = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnProject = New System.Windows.Forms.Button()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.txtLibraryName2 = New System.Windows.Forms.TextBox()
@@ -201,32 +246,14 @@ Partial Class Main
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ViewUtilityDocumentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.pbIconDefaultLicense = New System.Windows.Forms.PictureBox()
-        Me.pbIconDefaultCopyright = New System.Windows.Forms.PictureBox()
-        Me.pbIconDefaultAuthor = New System.Windows.Forms.PictureBox()
-        Me.pbIconLicense = New System.Windows.Forms.PictureBox()
-        Me.pbIconCopyright = New System.Windows.Forms.PictureBox()
-        Me.pbIconAuthor = New System.Windows.Forms.PictureBox()
-        Me.pbIconDateTime = New System.Windows.Forms.PictureBox()
-        Me.pbIconProcess = New System.Windows.Forms.PictureBox()
-        Me.pbIconWebpage = New System.Windows.Forms.PictureBox()
-        Me.pbIconWebsite = New System.Windows.Forms.PictureBox()
-        Me.pbIconForm = New System.Windows.Forms.PictureBox()
-        Me.pbIconNote = New System.Windows.Forms.PictureBox()
-        Me.pbIconLib = New System.Windows.Forms.PictureBox()
-        Me.pbIconAdvl = New System.Windows.Forms.PictureBox()
-        Me.pbIconExcel = New System.Windows.Forms.PictureBox()
-        Me.pbIconPowerPoint = New System.Windows.Forms.PictureBox()
-        Me.pbIconPicture = New System.Windows.Forms.PictureBox()
-        Me.pbIconAlbum = New System.Windows.Forms.PictureBox()
-        Me.pbIconCode = New System.Windows.Forms.PictureBox()
-        Me.pbIconApplication = New System.Windows.Forms.PictureBox()
-        Me.pbIconBookSection = New System.Windows.Forms.PictureBox()
-        Me.pbIconBook = New System.Windows.Forms.PictureBox()
-        Me.pbIconCollection = New System.Windows.Forms.PictureBox()
         Me.btnAndorville = New System.Windows.Forms.Button()
+        Me.btnWebPages = New System.Windows.Forms.Button()
+        Me.ContextMenuStrip3 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem1_EditWorkflowTabPage = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1_ShowStartPageInWorkflowTab = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
+        Me.TabPage7.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
@@ -235,31 +262,23 @@ Partial Class Main
         Me.TabControl4.SuspendLayout()
         Me.TabPage6.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
+        CType(Me.pbIconDefaultLicense, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox5.SuspendLayout()
+        CType(Me.pbIconDefaultCopyright, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox4.SuspendLayout()
+        CType(Me.pbIconDefaultAuthor, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
         CType(Me.dgvDocument, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
         Me.GroupBox8.SuspendLayout()
+        CType(Me.pbIconLicense, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox7.SuspendLayout()
+        CType(Me.pbIconCopyright, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
+        CType(Me.pbIconAuthor, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage12.SuspendLayout()
         Me.TabPage13.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        Me.TabPage14.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.TabPage15.SuspendLayout()
-        CType(Me.dgvDeletedItems, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage2.SuspendLayout()
-        Me.ContextMenuStrip1.SuspendLayout()
-        Me.ContextMenuStrip2.SuspendLayout()
-        CType(Me.pbIconDefaultLicense, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbIconDefaultCopyright, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbIconDefaultAuthor, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbIconLicense, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbIconCopyright, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbIconAuthor, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbIconDateTime, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbIconProcess, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbIconWebpage, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -277,6 +296,16 @@ Partial Class Main
         CType(Me.pbIconBookSection, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbIconBook, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbIconCollection, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage14.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.TabPage15.SuspendLayout()
+        CType(Me.dgvDeletedItems, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage2.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
+        Me.ContextMenuStrip2.SuspendLayout()
+        Me.ContextMenuStrip3.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnExit
@@ -326,207 +355,36 @@ Partial Class Main
         Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage7)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Location = New System.Drawing.Point(12, 40)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(1059, 558)
         Me.TabControl1.TabIndex = 51
         '
-        'TabPage1
+        'TabPage7
         '
-        Me.TabPage1.Controls.Add(Me.txtLastUsed)
-        Me.TabPage1.Controls.Add(Me.Label11)
-        Me.TabPage1.Controls.Add(Me.txtCreationDate)
-        Me.TabPage1.Controls.Add(Me.Label10)
-        Me.TabPage1.Controls.Add(Me.txtDataLocationPath)
-        Me.TabPage1.Controls.Add(Me.txtDataLocationType)
-        Me.TabPage1.Controls.Add(Me.Label9)
-        Me.TabPage1.Controls.Add(Me.Label8)
-        Me.TabPage1.Controls.Add(Me.txtSettingsLocationPath)
-        Me.TabPage1.Controls.Add(Me.Label7)
-        Me.TabPage1.Controls.Add(Me.txtSettingsLocationType)
-        Me.TabPage1.Controls.Add(Me.Label6)
-        Me.TabPage1.Controls.Add(Me.txtProjectType)
-        Me.TabPage1.Controls.Add(Me.Label5)
-        Me.TabPage1.Controls.Add(Me.txtProjectDescription)
-        Me.TabPage1.Controls.Add(Me.Label4)
-        Me.TabPage1.Controls.Add(Me.txtProjectName)
-        Me.TabPage1.Controls.Add(Me.Label3)
-        Me.TabPage1.Controls.Add(Me.btnProject)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1051, 532)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Project Information"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        Me.TabPage7.Controls.Add(Me.WebBrowser1)
+        Me.TabPage7.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Size = New System.Drawing.Size(1051, 532)
+        Me.TabPage7.TabIndex = 3
+        Me.TabPage7.Text = "Workflow"
+        Me.TabPage7.UseVisualStyleBackColor = True
         '
-        'txtLastUsed
+        'WebBrowser1
         '
-        Me.txtLastUsed.Location = New System.Drawing.Point(457, 109)
-        Me.txtLastUsed.Name = "txtLastUsed"
-        Me.txtLastUsed.Size = New System.Drawing.Size(150, 20)
-        Me.txtLastUsed.TabIndex = 65
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(374, 112)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(78, 13)
-        Me.Label11.TabIndex = 64
-        Me.Label11.Text = "Date last used:"
-        '
-        'txtCreationDate
-        '
-        Me.txtCreationDate.Location = New System.Drawing.Point(217, 108)
-        Me.txtCreationDate.Name = "txtCreationDate"
-        Me.txtCreationDate.Size = New System.Drawing.Size(150, 20)
-        Me.txtCreationDate.TabIndex = 63
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(138, 112)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(73, 13)
-        Me.Label10.TabIndex = 62
-        Me.Label10.Text = "Creation date:"
-        '
-        'txtDataLocationPath
-        '
-        Me.txtDataLocationPath.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.WebBrowser1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtDataLocationPath.Location = New System.Drawing.Point(215, 186)
-        Me.txtDataLocationPath.Multiline = True
-        Me.txtDataLocationPath.Name = "txtDataLocationPath"
-        Me.txtDataLocationPath.Size = New System.Drawing.Size(804, 46)
-        Me.txtDataLocationPath.TabIndex = 61
-        '
-        'txtDataLocationType
-        '
-        Me.txtDataLocationType.Location = New System.Drawing.Point(124, 186)
-        Me.txtDataLocationType.Name = "txtDataLocationType"
-        Me.txtDataLocationType.Size = New System.Drawing.Size(85, 20)
-        Me.txtDataLocationType.TabIndex = 60
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(112, 215)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(97, 13)
-        Me.Label9.TabIndex = 59
-        Me.Label9.Text = "Data location path:"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(6, 189)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(96, 13)
-        Me.Label8.TabIndex = 58
-        Me.Label8.Text = "Data location type:"
-        '
-        'txtSettingsLocationPath
-        '
-        Me.txtSettingsLocationPath.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtSettingsLocationPath.Location = New System.Drawing.Point(215, 134)
-        Me.txtSettingsLocationPath.Multiline = True
-        Me.txtSettingsLocationPath.Name = "txtSettingsLocationPath"
-        Me.txtSettingsLocationPath.Size = New System.Drawing.Size(804, 46)
-        Me.txtSettingsLocationPath.TabIndex = 57
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(97, 162)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(112, 13)
-        Me.Label7.TabIndex = 56
-        Me.Label7.Text = "Settings location path:"
-        '
-        'txtSettingsLocationType
-        '
-        Me.txtSettingsLocationType.Location = New System.Drawing.Point(123, 134)
-        Me.txtSettingsLocationType.Name = "txtSettingsLocationType"
-        Me.txtSettingsLocationType.Size = New System.Drawing.Size(86, 20)
-        Me.txtSettingsLocationType.TabIndex = 55
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 137)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(111, 13)
-        Me.Label6.TabIndex = 54
-        Me.Label6.Text = "Settings location type:"
-        '
-        'txtProjectType
-        '
-        Me.txtProjectType.Location = New System.Drawing.Point(46, 109)
-        Me.txtProjectType.Name = "txtProjectType"
-        Me.txtProjectType.Size = New System.Drawing.Size(86, 20)
-        Me.txtProjectType.TabIndex = 53
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 111)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 13)
-        Me.Label5.TabIndex = 52
-        Me.Label5.Text = "Type:"
-        '
-        'txtProjectDescription
-        '
-        Me.txtProjectDescription.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtProjectDescription.Location = New System.Drawing.Point(123, 62)
-        Me.txtProjectDescription.Multiline = True
-        Me.txtProjectDescription.Name = "txtProjectDescription"
-        Me.txtProjectDescription.Size = New System.Drawing.Size(896, 40)
-        Me.txtProjectDescription.TabIndex = 51
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 65)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(63, 13)
-        Me.Label4.TabIndex = 50
-        Me.Label4.Text = "Description:"
-        '
-        'txtProjectName
-        '
-        Me.txtProjectName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtProjectName.Location = New System.Drawing.Point(123, 36)
-        Me.txtProjectName.Name = "txtProjectName"
-        Me.txtProjectName.Size = New System.Drawing.Size(896, 20)
-        Me.txtProjectName.TabIndex = 49
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 39)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 13)
-        Me.Label3.TabIndex = 48
-        Me.Label3.Text = "Name:"
-        '
-        'btnProject
-        '
-        Me.btnProject.Location = New System.Drawing.Point(6, 6)
-        Me.btnProject.Name = "btnProject"
-        Me.btnProject.Size = New System.Drawing.Size(69, 22)
-        Me.btnProject.TabIndex = 47
-        Me.btnProject.Text = "Project"
-        Me.btnProject.UseVisualStyleBackColor = True
+        Me.WebBrowser1.Location = New System.Drawing.Point(3, 3)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(1045, 526)
+        Me.WebBrowser1.TabIndex = 69
         '
         'TabPage3
         '
@@ -667,6 +525,14 @@ Partial Class Main
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Default License:"
         '
+        'pbIconDefaultLicense
+        '
+        Me.pbIconDefaultLicense.Location = New System.Drawing.Point(6, 19)
+        Me.pbIconDefaultLicense.Name = "pbIconDefaultLicense"
+        Me.pbIconDefaultLicense.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconDefaultLicense.TabIndex = 144
+        Me.pbIconDefaultLicense.TabStop = False
+        '
         'txtDefaultLicenseFile
         '
         Me.txtDefaultLicenseFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -732,6 +598,14 @@ Partial Class Main
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Default Copyright:"
         '
+        'pbIconDefaultCopyright
+        '
+        Me.pbIconDefaultCopyright.Location = New System.Drawing.Point(6, 19)
+        Me.pbIconDefaultCopyright.Name = "pbIconDefaultCopyright"
+        Me.pbIconDefaultCopyright.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconDefaultCopyright.TabIndex = 145
+        Me.pbIconDefaultCopyright.TabStop = False
+        '
         'txtDefaultCopyrightFile
         '
         Me.txtDefaultCopyrightFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -794,6 +668,14 @@ Partial Class Main
         Me.GroupBox4.TabIndex = 145
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Default Author:"
+        '
+        'pbIconDefaultAuthor
+        '
+        Me.pbIconDefaultAuthor.Location = New System.Drawing.Point(7, 19)
+        Me.pbIconDefaultAuthor.Name = "pbIconDefaultAuthor"
+        Me.pbIconDefaultAuthor.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconDefaultAuthor.TabIndex = 149
+        Me.pbIconDefaultAuthor.TabStop = False
         '
         'txtDefaultAuthorFile
         '
@@ -1061,6 +943,14 @@ Partial Class Main
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "License:"
         '
+        'pbIconLicense
+        '
+        Me.pbIconLicense.Location = New System.Drawing.Point(6, 19)
+        Me.pbIconLicense.Name = "pbIconLicense"
+        Me.pbIconLicense.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconLicense.TabIndex = 144
+        Me.pbIconLicense.TabStop = False
+        '
         'txtLicenseFile
         '
         Me.txtLicenseFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -1126,6 +1016,14 @@ Partial Class Main
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Copyright:"
         '
+        'pbIconCopyright
+        '
+        Me.pbIconCopyright.Location = New System.Drawing.Point(6, 19)
+        Me.pbIconCopyright.Name = "pbIconCopyright"
+        Me.pbIconCopyright.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconCopyright.TabIndex = 145
+        Me.pbIconCopyright.TabStop = False
+        '
         'txtCopyrightFile
         '
         Me.txtCopyrightFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -1188,6 +1086,14 @@ Partial Class Main
         Me.GroupBox3.TabIndex = 144
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Author:"
+        '
+        'pbIconAuthor
+        '
+        Me.pbIconAuthor.Location = New System.Drawing.Point(7, 19)
+        Me.pbIconAuthor.Name = "pbIconAuthor"
+        Me.pbIconAuthor.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconAuthor.TabIndex = 149
+        Me.pbIconAuthor.TabStop = False
         '
         'txtAuthorFile
         '
@@ -1504,6 +1410,14 @@ Partial Class Main
         Me.rbDateTime.Text = "Date-Time"
         Me.rbDateTime.UseVisualStyleBackColor = True
         '
+        'pbIconDateTime
+        '
+        Me.pbIconDateTime.Location = New System.Drawing.Point(465, 7)
+        Me.pbIconDateTime.Name = "pbIconDateTime"
+        Me.pbIconDateTime.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconDateTime.TabIndex = 132
+        Me.pbIconDateTime.TabStop = False
+        '
         'rbProcess
         '
         Me.rbProcess.AutoSize = True
@@ -1514,6 +1428,14 @@ Partial Class Main
         Me.rbProcess.TabStop = True
         Me.rbProcess.Text = "Process"
         Me.rbProcess.UseVisualStyleBackColor = True
+        '
+        'pbIconProcess
+        '
+        Me.pbIconProcess.Location = New System.Drawing.Point(161, 143)
+        Me.pbIconProcess.Name = "pbIconProcess"
+        Me.pbIconProcess.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconProcess.TabIndex = 130
+        Me.pbIconProcess.TabStop = False
         '
         'rbWebpage
         '
@@ -1527,6 +1449,14 @@ Partial Class Main
         Me.rbWebpage.Text = "Web Page"
         Me.rbWebpage.UseVisualStyleBackColor = True
         '
+        'pbIconWebpage
+        '
+        Me.pbIconWebpage.Location = New System.Drawing.Point(331, 239)
+        Me.pbIconWebpage.Name = "pbIconWebpage"
+        Me.pbIconWebpage.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconWebpage.TabIndex = 127
+        Me.pbIconWebpage.TabStop = False
+        '
         'rbWebsite
         '
         Me.rbWebsite.AutoSize = True
@@ -1539,6 +1469,14 @@ Partial Class Main
         Me.rbWebsite.Text = "Web Site"
         Me.rbWebsite.UseVisualStyleBackColor = True
         '
+        'pbIconWebsite
+        '
+        Me.pbIconWebsite.Location = New System.Drawing.Point(315, 199)
+        Me.pbIconWebsite.Name = "pbIconWebsite"
+        Me.pbIconWebsite.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconWebsite.TabIndex = 124
+        Me.pbIconWebsite.TabStop = False
+        '
         'rbForm
         '
         Me.rbForm.AutoSize = True
@@ -1550,6 +1488,14 @@ Partial Class Main
         Me.rbForm.Text = "Form"
         Me.rbForm.UseVisualStyleBackColor = True
         '
+        'pbIconForm
+        '
+        Me.pbIconForm.Location = New System.Drawing.Point(21, 222)
+        Me.pbIconForm.Name = "pbIconForm"
+        Me.pbIconForm.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconForm.TabIndex = 121
+        Me.pbIconForm.TabStop = False
+        '
         'rbNote
         '
         Me.rbNote.AutoSize = True
@@ -1560,6 +1506,14 @@ Partial Class Main
         Me.rbNote.TabStop = True
         Me.rbNote.Text = "Note"
         Me.rbNote.UseVisualStyleBackColor = True
+        '
+        'pbIconNote
+        '
+        Me.pbIconNote.Location = New System.Drawing.Point(161, 95)
+        Me.pbIconNote.Name = "pbIconNote"
+        Me.pbIconNote.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconNote.TabIndex = 118
+        Me.pbIconNote.TabStop = False
         '
         'rbLibrary
         '
@@ -1573,6 +1527,14 @@ Partial Class Main
         Me.rbLibrary.Text = "Library"
         Me.rbLibrary.UseVisualStyleBackColor = True
         '
+        'pbIconLib
+        '
+        Me.pbIconLib.Location = New System.Drawing.Point(315, 7)
+        Me.pbIconLib.Name = "pbIconLib"
+        Me.pbIconLib.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconLib.TabIndex = 115
+        Me.pbIconLib.TabStop = False
+        '
         'rbAdvlApplication
         '
         Me.rbAdvlApplication.AutoSize = True
@@ -1584,6 +1546,14 @@ Partial Class Main
         Me.rbAdvlApplication.TabStop = True
         Me.rbAdvlApplication.Text = "ADVL Application"
         Me.rbAdvlApplication.UseVisualStyleBackColor = True
+        '
+        'pbIconAdvl
+        '
+        Me.pbIconAdvl.Location = New System.Drawing.Point(315, 151)
+        Me.pbIconAdvl.Name = "pbIconAdvl"
+        Me.pbIconAdvl.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconAdvl.TabIndex = 111
+        Me.pbIconAdvl.TabStop = False
         '
         'rbExcel
         '
@@ -1597,6 +1567,14 @@ Partial Class Main
         Me.rbExcel.Text = "Excel"
         Me.rbExcel.UseVisualStyleBackColor = True
         '
+        'pbIconExcel
+        '
+        Me.pbIconExcel.Location = New System.Drawing.Point(315, 103)
+        Me.pbIconExcel.Name = "pbIconExcel"
+        Me.pbIconExcel.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconExcel.TabIndex = 108
+        Me.pbIconExcel.TabStop = False
+        '
         'rbPowerPoint
         '
         Me.rbPowerPoint.AutoSize = True
@@ -1609,6 +1587,14 @@ Partial Class Main
         Me.rbPowerPoint.Text = "PowerPoint"
         Me.rbPowerPoint.UseVisualStyleBackColor = True
         '
+        'pbIconPowerPoint
+        '
+        Me.pbIconPowerPoint.Location = New System.Drawing.Point(315, 55)
+        Me.pbIconPowerPoint.Name = "pbIconPowerPoint"
+        Me.pbIconPowerPoint.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconPowerPoint.TabIndex = 105
+        Me.pbIconPowerPoint.TabStop = False
+        '
         'rbPicture
         '
         Me.rbPicture.AutoSize = True
@@ -1619,6 +1605,14 @@ Partial Class Main
         Me.rbPicture.TabStop = True
         Me.rbPicture.Text = "Picture"
         Me.rbPicture.UseVisualStyleBackColor = True
+        '
+        'pbIconPicture
+        '
+        Me.pbIconPicture.Location = New System.Drawing.Point(177, 47)
+        Me.pbIconPicture.Name = "pbIconPicture"
+        Me.pbIconPicture.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconPicture.TabIndex = 102
+        Me.pbIconPicture.TabStop = False
         '
         'rbAlbum
         '
@@ -1631,6 +1625,14 @@ Partial Class Main
         Me.rbAlbum.Text = "Picture Album"
         Me.rbAlbum.UseVisualStyleBackColor = True
         '
+        'pbIconAlbum
+        '
+        Me.pbIconAlbum.Location = New System.Drawing.Point(161, 7)
+        Me.pbIconAlbum.Name = "pbIconAlbum"
+        Me.pbIconAlbum.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconAlbum.TabIndex = 99
+        Me.pbIconAlbum.TabStop = False
+        '
         'rbCode
         '
         Me.rbCode.AutoSize = True
@@ -1641,6 +1643,14 @@ Partial Class Main
         Me.rbCode.TabStop = True
         Me.rbCode.Text = "Code"
         Me.rbCode.UseVisualStyleBackColor = True
+        '
+        'pbIconCode
+        '
+        Me.pbIconCode.Location = New System.Drawing.Point(21, 182)
+        Me.pbIconCode.Name = "pbIconCode"
+        Me.pbIconCode.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconCode.TabIndex = 96
+        Me.pbIconCode.TabStop = False
         '
         'rbApplication
         '
@@ -1685,6 +1695,38 @@ Partial Class Main
         Me.rbCollection.TabStop = True
         Me.rbCollection.Text = "Collection"
         Me.rbCollection.UseVisualStyleBackColor = True
+        '
+        'pbIconApplication
+        '
+        Me.pbIconApplication.Location = New System.Drawing.Point(5, 142)
+        Me.pbIconApplication.Name = "pbIconApplication"
+        Me.pbIconApplication.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconApplication.TabIndex = 90
+        Me.pbIconApplication.TabStop = False
+        '
+        'pbIconBookSection
+        '
+        Me.pbIconBookSection.Location = New System.Drawing.Point(21, 95)
+        Me.pbIconBookSection.Name = "pbIconBookSection"
+        Me.pbIconBookSection.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconBookSection.TabIndex = 88
+        Me.pbIconBookSection.TabStop = False
+        '
+        'pbIconBook
+        '
+        Me.pbIconBook.Location = New System.Drawing.Point(5, 55)
+        Me.pbIconBook.Name = "pbIconBook"
+        Me.pbIconBook.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconBook.TabIndex = 85
+        Me.pbIconBook.TabStop = False
+        '
+        'pbIconCollection
+        '
+        Me.pbIconCollection.Location = New System.Drawing.Point(5, 7)
+        Me.pbIconCollection.Name = "pbIconCollection"
+        Me.pbIconCollection.Size = New System.Drawing.Size(32, 34)
+        Me.pbIconCollection.TabIndex = 83
+        Me.pbIconCollection.TabStop = False
         '
         'txtNewLibraryItemFileName
         '
@@ -2069,8 +2111,407 @@ Partial Class Main
         Me.lstLibraries.Size = New System.Drawing.Size(956, 420)
         Me.lstLibraries.TabIndex = 71
         '
-        'Timer1
+        'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.btnOpenAppDir)
+        Me.TabPage1.Controls.Add(Me.btnOpenSystem)
+        Me.TabPage1.Controls.Add(Me.txtSystemLocationType)
+        Me.TabPage1.Controls.Add(Me.txtSystemPath)
+        Me.TabPage1.Controls.Add(Me.btnOpenData)
+        Me.TabPage1.Controls.Add(Me.btnOpenSettings)
+        Me.TabPage1.Controls.Add(Me.chkConnect)
+        Me.TabPage1.Controls.Add(Me.btnOpenProject)
+        Me.TabPage1.Controls.Add(Me.txtProjectPath)
+        Me.TabPage1.Controls.Add(Me.txtProNetName)
+        Me.TabPage1.Controls.Add(Me.txtParentProject)
+        Me.TabPage1.Controls.Add(Me.Label55)
+        Me.TabPage1.Controls.Add(Me.Label54)
+        Me.TabPage1.Controls.Add(Me.btnAdd)
+        Me.TabPage1.Controls.Add(Me.btnParameters)
+        Me.TabPage1.Controls.Add(Me.Label49)
+        Me.TabPage1.Controls.Add(Me.txtCurrentDuration)
+        Me.TabPage1.Controls.Add(Me.Label50)
+        Me.TabPage1.Controls.Add(Me.Label51)
+        Me.TabPage1.Controls.Add(Me.txtTotalDuration)
+        Me.TabPage1.Controls.Add(Me.Label52)
+        Me.TabPage1.Controls.Add(Me.Label53)
+        Me.TabPage1.Controls.Add(Me.txtLastUsed)
+        Me.TabPage1.Controls.Add(Me.Label11)
+        Me.TabPage1.Controls.Add(Me.txtCreationDate)
+        Me.TabPage1.Controls.Add(Me.Label10)
+        Me.TabPage1.Controls.Add(Me.txtDataPath)
+        Me.TabPage1.Controls.Add(Me.txtDataLocationType)
+        Me.TabPage1.Controls.Add(Me.Label9)
+        Me.TabPage1.Controls.Add(Me.txtSettingsPath)
+        Me.TabPage1.Controls.Add(Me.Label7)
+        Me.TabPage1.Controls.Add(Me.txtSettingsLocationType)
+        Me.TabPage1.Controls.Add(Me.Label6)
+        Me.TabPage1.Controls.Add(Me.txtProjectType)
+        Me.TabPage1.Controls.Add(Me.Label5)
+        Me.TabPage1.Controls.Add(Me.txtProjectDescription)
+        Me.TabPage1.Controls.Add(Me.Label4)
+        Me.TabPage1.Controls.Add(Me.txtProjectName)
+        Me.TabPage1.Controls.Add(Me.Label3)
+        Me.TabPage1.Controls.Add(Me.btnProject)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(1051, 532)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Project Information"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'btnOpenAppDir
+        '
+        Me.btnOpenAppDir.Location = New System.Drawing.Point(6, 369)
+        Me.btnOpenAppDir.Name = "btnOpenAppDir"
+        Me.btnOpenAppDir.Size = New System.Drawing.Size(150, 22)
+        Me.btnOpenAppDir.TabIndex = 317
+        Me.btnOpenAppDir.Text = "Open Application Directory"
+        Me.btnOpenAppDir.UseVisualStyleBackColor = True
+        '
+        'btnOpenSystem
+        '
+        Me.btnOpenSystem.Location = New System.Drawing.Point(84, 336)
+        Me.btnOpenSystem.Name = "btnOpenSystem"
+        Me.btnOpenSystem.Size = New System.Drawing.Size(48, 22)
+        Me.btnOpenSystem.TabIndex = 316
+        Me.btnOpenSystem.Text = "Open"
+        Me.btnOpenSystem.UseVisualStyleBackColor = True
+        '
+        'txtSystemLocationType
+        '
+        Me.txtSystemLocationType.Location = New System.Drawing.Point(6, 336)
+        Me.txtSystemLocationType.Name = "txtSystemLocationType"
+        Me.txtSystemLocationType.Size = New System.Drawing.Size(72, 20)
+        Me.txtSystemLocationType.TabIndex = 315
+        '
+        'txtSystemPath
+        '
+        Me.txtSystemPath.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtSystemPath.Location = New System.Drawing.Point(138, 317)
+        Me.txtSystemPath.Multiline = True
+        Me.txtSystemPath.Name = "txtSystemPath"
+        Me.txtSystemPath.Size = New System.Drawing.Size(907, 46)
+        Me.txtSystemPath.TabIndex = 314
+        '
+        'btnOpenData
+        '
+        Me.btnOpenData.Location = New System.Drawing.Point(84, 281)
+        Me.btnOpenData.Name = "btnOpenData"
+        Me.btnOpenData.Size = New System.Drawing.Size(48, 22)
+        Me.btnOpenData.TabIndex = 313
+        Me.btnOpenData.Text = "Open"
+        Me.btnOpenData.UseVisualStyleBackColor = True
+        '
+        'btnOpenSettings
+        '
+        Me.btnOpenSettings.Location = New System.Drawing.Point(84, 232)
+        Me.btnOpenSettings.Name = "btnOpenSettings"
+        Me.btnOpenSettings.Size = New System.Drawing.Size(48, 22)
+        Me.btnOpenSettings.TabIndex = 312
+        Me.btnOpenSettings.Text = "Open"
+        Me.btnOpenSettings.UseVisualStyleBackColor = True
+        '
+        'chkConnect
+        '
+        Me.chkConnect.AutoSize = True
+        Me.chkConnect.Location = New System.Drawing.Point(426, 137)
+        Me.chkConnect.Name = "chkConnect"
+        Me.chkConnect.Size = New System.Drawing.Size(112, 17)
+        Me.chkConnect.TabIndex = 311
+        Me.chkConnect.Text = "Connect On Open"
+        Me.chkConnect.UseVisualStyleBackColor = True
+        '
+        'btnOpenProject
+        '
+        Me.btnOpenProject.Location = New System.Drawing.Point(84, 180)
+        Me.btnOpenProject.Name = "btnOpenProject"
+        Me.btnOpenProject.Size = New System.Drawing.Size(48, 22)
+        Me.btnOpenProject.TabIndex = 310
+        Me.btnOpenProject.Text = "Open"
+        Me.btnOpenProject.UseVisualStyleBackColor = True
+        '
+        'txtProjectPath
+        '
+        Me.txtProjectPath.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtProjectPath.Location = New System.Drawing.Point(137, 161)
+        Me.txtProjectPath.Multiline = True
+        Me.txtProjectPath.Name = "txtProjectPath"
+        Me.txtProjectPath.Size = New System.Drawing.Size(908, 46)
+        Me.txtProjectPath.TabIndex = 309
+        '
+        'txtProNetName
+        '
+        Me.txtProNetName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtProNetName.Location = New System.Drawing.Point(271, 36)
+        Me.txtProNetName.Name = "txtProNetName"
+        Me.txtProNetName.Size = New System.Drawing.Size(774, 20)
+        Me.txtProNetName.TabIndex = 308
+        Me.ToolTip1.SetToolTip(Me.txtProNetName, "The name of the Application Network containing this project")
+        '
+        'txtParentProject
+        '
+        Me.txtParentProject.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtParentProject.Location = New System.Drawing.Point(271, 8)
+        Me.txtParentProject.Name = "txtParentProject"
+        Me.txtParentProject.Size = New System.Drawing.Size(774, 20)
+        Me.txtParentProject.TabIndex = 307
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.Location = New System.Drawing.Point(162, 39)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(84, 13)
+        Me.Label55.TabIndex = 306
+        Me.Label55.Text = "Project network:"
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.Location = New System.Drawing.Point(162, 11)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(76, 13)
+        Me.Label54.TabIndex = 305
+        Me.Label54.Text = "Parent project:"
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Location = New System.Drawing.Point(6, 34)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(150, 22)
+        Me.btnAdd.TabIndex = 304
+        Me.btnAdd.Text = "Add to Message Service"
+        Me.ToolTip1.SetToolTip(Me.btnAdd, "Add project to the Message Service list")
+        Me.btnAdd.UseVisualStyleBackColor = True
+        '
+        'btnParameters
+        '
+        Me.btnParameters.Location = New System.Drawing.Point(84, 6)
+        Me.btnParameters.Name = "btnParameters"
+        Me.btnParameters.Size = New System.Drawing.Size(72, 22)
+        Me.btnParameters.TabIndex = 300
+        Me.btnParameters.Text = "Parameters"
+        Me.btnParameters.UseVisualStyleBackColor = True
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Location = New System.Drawing.Point(567, 374)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(41, 13)
+        Me.Label49.TabIndex = 79
+        Me.Label49.Text = "d:h:m:s"
+        '
+        'txtCurrentDuration
+        '
+        Me.txtCurrentDuration.Location = New System.Drawing.Point(476, 371)
+        Me.txtCurrentDuration.Name = "txtCurrentDuration"
+        Me.txtCurrentDuration.Size = New System.Drawing.Size(85, 20)
+        Me.txtCurrentDuration.TabIndex = 78
+        '
+        'Label50
+        '
+        Me.Label50.AutoSize = True
+        Me.Label50.Location = New System.Drawing.Point(375, 376)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(41, 13)
+        Me.Label50.TabIndex = 77
+        Me.Label50.Text = "d:h:m:s"
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.Location = New System.Drawing.Point(426, 376)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(44, 13)
+        Me.Label51.TabIndex = 76
+        Me.Label51.Text = "Current:"
+        '
+        'txtTotalDuration
+        '
+        Me.txtTotalDuration.Location = New System.Drawing.Point(283, 373)
+        Me.txtTotalDuration.Name = "txtTotalDuration"
+        Me.txtTotalDuration.Size = New System.Drawing.Size(85, 20)
+        Me.txtTotalDuration.TabIndex = 75
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Location = New System.Drawing.Point(243, 376)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(34, 13)
+        Me.Label52.TabIndex = 74
+        Me.Label52.Text = "Total:"
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.Location = New System.Drawing.Point(162, 376)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(75, 13)
+        Me.Label53.TabIndex = 73
+        Me.Label53.Text = "Project usage:"
+        '
+        'txtLastUsed
+        '
+        Me.txtLastUsed.Location = New System.Drawing.Point(296, 135)
+        Me.txtLastUsed.Name = "txtLastUsed"
+        Me.txtLastUsed.Size = New System.Drawing.Size(120, 20)
+        Me.txtLastUsed.TabIndex = 65
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(212, 138)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(78, 13)
+        Me.Label11.TabIndex = 64
+        Me.Label11.Text = "Date last used:"
+        '
+        'txtCreationDate
+        '
+        Me.txtCreationDate.Location = New System.Drawing.Point(85, 135)
+        Me.txtCreationDate.Name = "txtCreationDate"
+        Me.txtCreationDate.Size = New System.Drawing.Size(120, 20)
+        Me.txtCreationDate.TabIndex = 63
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(6, 138)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(73, 13)
+        Me.Label10.TabIndex = 62
+        Me.Label10.Text = "Creation date:"
+        '
+        'txtDataPath
+        '
+        Me.txtDataPath.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtDataPath.Location = New System.Drawing.Point(138, 265)
+        Me.txtDataPath.Multiline = True
+        Me.txtDataPath.Name = "txtDataPath"
+        Me.txtDataPath.Size = New System.Drawing.Size(907, 46)
+        Me.txtDataPath.TabIndex = 61
+        '
+        'txtDataLocationType
+        '
+        Me.txtDataLocationType.Location = New System.Drawing.Point(6, 281)
+        Me.txtDataLocationType.Name = "txtDataLocationType"
+        Me.txtDataLocationType.Size = New System.Drawing.Size(72, 20)
+        Me.txtDataLocationType.TabIndex = 60
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(6, 320)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(108, 13)
+        Me.Label9.TabIndex = 59
+        Me.Label9.Text = "System location path:"
+        '
+        'txtSettingsPath
+        '
+        Me.txtSettingsPath.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtSettingsPath.Location = New System.Drawing.Point(138, 213)
+        Me.txtSettingsPath.Multiline = True
+        Me.txtSettingsPath.Name = "txtSettingsPath"
+        Me.txtSettingsPath.Size = New System.Drawing.Size(907, 46)
+        Me.txtSettingsPath.TabIndex = 57
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(6, 265)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(97, 13)
+        Me.Label7.TabIndex = 56
+        Me.Label7.Text = "Data location path:"
+        '
+        'txtSettingsLocationType
+        '
+        Me.txtSettingsLocationType.Location = New System.Drawing.Point(6, 232)
+        Me.txtSettingsLocationType.Name = "txtSettingsLocationType"
+        Me.txtSettingsLocationType.Size = New System.Drawing.Size(72, 20)
+        Me.txtSettingsLocationType.TabIndex = 55
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(6, 216)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(112, 13)
+        Me.Label6.TabIndex = 54
+        Me.Label6.Text = "Settings location path:"
+        '
+        'txtProjectType
+        '
+        Me.txtProjectType.Location = New System.Drawing.Point(6, 180)
+        Me.txtProjectType.Name = "txtProjectType"
+        Me.txtProjectType.Size = New System.Drawing.Size(72, 20)
+        Me.txtProjectType.TabIndex = 53
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(6, 164)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(67, 13)
+        Me.Label5.TabIndex = 52
+        Me.Label5.Text = "Project path:"
+        '
+        'txtProjectDescription
+        '
+        Me.txtProjectDescription.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtProjectDescription.Location = New System.Drawing.Point(85, 88)
+        Me.txtProjectDescription.Multiline = True
+        Me.txtProjectDescription.Name = "txtProjectDescription"
+        Me.txtProjectDescription.Size = New System.Drawing.Size(960, 40)
+        Me.txtProjectDescription.TabIndex = 51
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(6, 91)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(63, 13)
+        Me.Label4.TabIndex = 50
+        Me.Label4.Text = "Description:"
+        '
+        'txtProjectName
+        '
+        Me.txtProjectName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtProjectName.Location = New System.Drawing.Point(84, 62)
+        Me.txtProjectName.Name = "txtProjectName"
+        Me.txtProjectName.Size = New System.Drawing.Size(961, 20)
+        Me.txtProjectName.TabIndex = 49
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(6, 65)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.TabIndex = 48
+        Me.Label3.Text = "Name:"
+        '
+        'btnProject
+        '
+        Me.btnProject.Location = New System.Drawing.Point(6, 6)
+        Me.btnProject.Name = "btnProject"
+        Me.btnProject.Size = New System.Drawing.Size(72, 22)
+        Me.btnProject.TabIndex = 47
+        Me.btnProject.Text = "Project List"
+        Me.btnProject.UseVisualStyleBackColor = True
         '
         'ImageList1
         '
@@ -2172,15 +2613,15 @@ Partial Class Main
         '
         Me.txtLibraryName2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtLibraryName2.Location = New System.Drawing.Point(233, 13)
+        Me.txtLibraryName2.Location = New System.Drawing.Point(203, 13)
         Me.txtLibraryName2.Name = "txtLibraryName2"
-        Me.txtLibraryName2.Size = New System.Drawing.Size(527, 20)
+        Me.txtLibraryName2.Size = New System.Drawing.Size(483, 20)
         Me.txtLibraryName2.TabIndex = 81
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(157, 17)
+        Me.Label15.Location = New System.Drawing.Point(133, 17)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(64, 13)
         Me.Label15.TabIndex = 82
@@ -2210,190 +2651,6 @@ Partial Class Main
         Me.ViewUtilityDocumentToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
         Me.ViewUtilityDocumentToolStripMenuItem.Text = "View utility document"
         '
-        'pbIconDefaultLicense
-        '
-        Me.pbIconDefaultLicense.Location = New System.Drawing.Point(6, 19)
-        Me.pbIconDefaultLicense.Name = "pbIconDefaultLicense"
-        Me.pbIconDefaultLicense.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconDefaultLicense.TabIndex = 144
-        Me.pbIconDefaultLicense.TabStop = False
-        '
-        'pbIconDefaultCopyright
-        '
-        Me.pbIconDefaultCopyright.Location = New System.Drawing.Point(6, 19)
-        Me.pbIconDefaultCopyright.Name = "pbIconDefaultCopyright"
-        Me.pbIconDefaultCopyright.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconDefaultCopyright.TabIndex = 145
-        Me.pbIconDefaultCopyright.TabStop = False
-        '
-        'pbIconDefaultAuthor
-        '
-        Me.pbIconDefaultAuthor.Location = New System.Drawing.Point(7, 19)
-        Me.pbIconDefaultAuthor.Name = "pbIconDefaultAuthor"
-        Me.pbIconDefaultAuthor.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconDefaultAuthor.TabIndex = 149
-        Me.pbIconDefaultAuthor.TabStop = False
-        '
-        'pbIconLicense
-        '
-        Me.pbIconLicense.Location = New System.Drawing.Point(6, 19)
-        Me.pbIconLicense.Name = "pbIconLicense"
-        Me.pbIconLicense.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconLicense.TabIndex = 144
-        Me.pbIconLicense.TabStop = False
-        '
-        'pbIconCopyright
-        '
-        Me.pbIconCopyright.Location = New System.Drawing.Point(6, 19)
-        Me.pbIconCopyright.Name = "pbIconCopyright"
-        Me.pbIconCopyright.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconCopyright.TabIndex = 145
-        Me.pbIconCopyright.TabStop = False
-        '
-        'pbIconAuthor
-        '
-        Me.pbIconAuthor.Location = New System.Drawing.Point(7, 19)
-        Me.pbIconAuthor.Name = "pbIconAuthor"
-        Me.pbIconAuthor.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconAuthor.TabIndex = 149
-        Me.pbIconAuthor.TabStop = False
-        '
-        'pbIconDateTime
-        '
-        Me.pbIconDateTime.Location = New System.Drawing.Point(465, 7)
-        Me.pbIconDateTime.Name = "pbIconDateTime"
-        Me.pbIconDateTime.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconDateTime.TabIndex = 132
-        Me.pbIconDateTime.TabStop = False
-        '
-        'pbIconProcess
-        '
-        Me.pbIconProcess.Location = New System.Drawing.Point(161, 143)
-        Me.pbIconProcess.Name = "pbIconProcess"
-        Me.pbIconProcess.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconProcess.TabIndex = 130
-        Me.pbIconProcess.TabStop = False
-        '
-        'pbIconWebpage
-        '
-        Me.pbIconWebpage.Location = New System.Drawing.Point(331, 239)
-        Me.pbIconWebpage.Name = "pbIconWebpage"
-        Me.pbIconWebpage.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconWebpage.TabIndex = 127
-        Me.pbIconWebpage.TabStop = False
-        '
-        'pbIconWebsite
-        '
-        Me.pbIconWebsite.Location = New System.Drawing.Point(315, 199)
-        Me.pbIconWebsite.Name = "pbIconWebsite"
-        Me.pbIconWebsite.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconWebsite.TabIndex = 124
-        Me.pbIconWebsite.TabStop = False
-        '
-        'pbIconForm
-        '
-        Me.pbIconForm.Location = New System.Drawing.Point(21, 222)
-        Me.pbIconForm.Name = "pbIconForm"
-        Me.pbIconForm.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconForm.TabIndex = 121
-        Me.pbIconForm.TabStop = False
-        '
-        'pbIconNote
-        '
-        Me.pbIconNote.Location = New System.Drawing.Point(161, 95)
-        Me.pbIconNote.Name = "pbIconNote"
-        Me.pbIconNote.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconNote.TabIndex = 118
-        Me.pbIconNote.TabStop = False
-        '
-        'pbIconLib
-        '
-        Me.pbIconLib.Location = New System.Drawing.Point(315, 7)
-        Me.pbIconLib.Name = "pbIconLib"
-        Me.pbIconLib.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconLib.TabIndex = 115
-        Me.pbIconLib.TabStop = False
-        '
-        'pbIconAdvl
-        '
-        Me.pbIconAdvl.Location = New System.Drawing.Point(315, 151)
-        Me.pbIconAdvl.Name = "pbIconAdvl"
-        Me.pbIconAdvl.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconAdvl.TabIndex = 111
-        Me.pbIconAdvl.TabStop = False
-        '
-        'pbIconExcel
-        '
-        Me.pbIconExcel.Location = New System.Drawing.Point(315, 103)
-        Me.pbIconExcel.Name = "pbIconExcel"
-        Me.pbIconExcel.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconExcel.TabIndex = 108
-        Me.pbIconExcel.TabStop = False
-        '
-        'pbIconPowerPoint
-        '
-        Me.pbIconPowerPoint.Location = New System.Drawing.Point(315, 55)
-        Me.pbIconPowerPoint.Name = "pbIconPowerPoint"
-        Me.pbIconPowerPoint.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconPowerPoint.TabIndex = 105
-        Me.pbIconPowerPoint.TabStop = False
-        '
-        'pbIconPicture
-        '
-        Me.pbIconPicture.Location = New System.Drawing.Point(177, 47)
-        Me.pbIconPicture.Name = "pbIconPicture"
-        Me.pbIconPicture.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconPicture.TabIndex = 102
-        Me.pbIconPicture.TabStop = False
-        '
-        'pbIconAlbum
-        '
-        Me.pbIconAlbum.Location = New System.Drawing.Point(161, 7)
-        Me.pbIconAlbum.Name = "pbIconAlbum"
-        Me.pbIconAlbum.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconAlbum.TabIndex = 99
-        Me.pbIconAlbum.TabStop = False
-        '
-        'pbIconCode
-        '
-        Me.pbIconCode.Location = New System.Drawing.Point(21, 182)
-        Me.pbIconCode.Name = "pbIconCode"
-        Me.pbIconCode.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconCode.TabIndex = 96
-        Me.pbIconCode.TabStop = False
-        '
-        'pbIconApplication
-        '
-        Me.pbIconApplication.Location = New System.Drawing.Point(5, 142)
-        Me.pbIconApplication.Name = "pbIconApplication"
-        Me.pbIconApplication.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconApplication.TabIndex = 90
-        Me.pbIconApplication.TabStop = False
-        '
-        'pbIconBookSection
-        '
-        Me.pbIconBookSection.Location = New System.Drawing.Point(21, 95)
-        Me.pbIconBookSection.Name = "pbIconBookSection"
-        Me.pbIconBookSection.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconBookSection.TabIndex = 88
-        Me.pbIconBookSection.TabStop = False
-        '
-        'pbIconBook
-        '
-        Me.pbIconBook.Location = New System.Drawing.Point(5, 55)
-        Me.pbIconBook.Name = "pbIconBook"
-        Me.pbIconBook.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconBook.TabIndex = 85
-        Me.pbIconBook.TabStop = False
-        '
-        'pbIconCollection
-        '
-        Me.pbIconCollection.Location = New System.Drawing.Point(5, 7)
-        Me.pbIconCollection.Name = "pbIconCollection"
-        Me.pbIconCollection.Size = New System.Drawing.Size(32, 34)
-        Me.pbIconCollection.TabIndex = 83
-        Me.pbIconCollection.TabStop = False
-        '
         'btnAndorville
         '
         Me.btnAndorville.BackgroundImage = Global.ADVL_Information_Library_1.My.Resources.Resources.Andorville_16May16_TM_Crop_Grey
@@ -2405,11 +2662,44 @@ Partial Class Main
         Me.btnAndorville.TabIndex = 50
         Me.btnAndorville.UseVisualStyleBackColor = True
         '
+        'btnWebPages
+        '
+        Me.btnWebPages.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnWebPages.ContextMenuStrip = Me.ContextMenuStrip3
+        Me.btnWebPages.Location = New System.Drawing.Point(692, 12)
+        Me.btnWebPages.Name = "btnWebPages"
+        Me.btnWebPages.Size = New System.Drawing.Size(68, 22)
+        Me.btnWebPages.TabIndex = 280
+        Me.btnWebPages.Text = "Workflows"
+        Me.btnWebPages.UseVisualStyleBackColor = True
+        '
+        'ContextMenuStrip3
+        '
+        Me.ContextMenuStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1_EditWorkflowTabPage, Me.ToolStripMenuItem1_ShowStartPageInWorkflowTab})
+        Me.ContextMenuStrip3.Name = "ContextMenuStrip3"
+        Me.ContextMenuStrip3.Size = New System.Drawing.Size(248, 48)
+        '
+        'ToolStripMenuItem1_EditWorkflowTabPage
+        '
+        Me.ToolStripMenuItem1_EditWorkflowTabPage.Name = "ToolStripMenuItem1_EditWorkflowTabPage"
+        Me.ToolStripMenuItem1_EditWorkflowTabPage.Size = New System.Drawing.Size(247, 22)
+        Me.ToolStripMenuItem1_EditWorkflowTabPage.Text = "Edit Workflow Tab Page"
+        '
+        'ToolStripMenuItem1_ShowStartPageInWorkflowTab
+        '
+        Me.ToolStripMenuItem1_ShowStartPageInWorkflowTab.Name = "ToolStripMenuItem1_ShowStartPageInWorkflowTab"
+        Me.ToolStripMenuItem1_ShowStartPageInWorkflowTab.Size = New System.Drawing.Size(247, 22)
+        Me.ToolStripMenuItem1_ShowStartPageInWorkflowTab.Text = "Show Start Page In Workflow Tab"
+        '
+        'Timer2
+        '
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1083, 610)
+        Me.Controls.Add(Me.btnWebPages)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.txtLibraryName2)
         Me.Controls.Add(Me.TabControl1)
@@ -2418,11 +2708,11 @@ Partial Class Main
         Me.Controls.Add(Me.btnMessages)
         Me.Controls.Add(Me.btnOnline)
         Me.Controls.Add(Me.btnExit)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Main"
         Me.Text = "Information Library V1-0"
         Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage1.PerformLayout()
+        Me.TabPage7.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel2.ResumeLayout(False)
@@ -2433,42 +2723,32 @@ Partial Class Main
         Me.TabPage6.PerformLayout()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
+        CType(Me.pbIconDefaultLicense, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
+        CType(Me.pbIconDefaultCopyright, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
+        CType(Me.pbIconDefaultAuthor, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
         CType(Me.dgvDocument, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage5.PerformLayout()
         Me.GroupBox8.ResumeLayout(False)
         Me.GroupBox8.PerformLayout()
+        CType(Me.pbIconLicense, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox7.PerformLayout()
+        CType(Me.pbIconCopyright, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        CType(Me.pbIconAuthor, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage12.ResumeLayout(False)
         Me.TabPage12.PerformLayout()
         Me.TabPage13.ResumeLayout(False)
         Me.TabPage13.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.TabPage14.ResumeLayout(False)
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.TabPage15.ResumeLayout(False)
-        CType(Me.dgvDeletedItems, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage2.ResumeLayout(False)
-        Me.ContextMenuStrip1.ResumeLayout(False)
-        Me.ContextMenuStrip2.ResumeLayout(False)
-        CType(Me.pbIconDefaultLicense, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbIconDefaultCopyright, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbIconDefaultAuthor, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbIconLicense, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbIconCopyright, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbIconAuthor, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbIconDateTime, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbIconProcess, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbIconWebpage, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2486,6 +2766,19 @@ Partial Class Main
         CType(Me.pbIconBookSection, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbIconBook, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbIconCollection, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage14.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.TabPage15.ResumeLayout(False)
+        CType(Me.dgvDeletedItems, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
+        Me.ContextMenuStrip2.ResumeLayout(False)
+        Me.ContextMenuStrip3.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2502,11 +2795,10 @@ Partial Class Main
     Friend WithEvents Label11 As Label
     Friend WithEvents txtCreationDate As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents txtDataLocationPath As TextBox
+    Friend WithEvents txtDataPath As TextBox
     Friend WithEvents txtDataLocationType As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents txtSettingsLocationPath As TextBox
+    Friend WithEvents txtSettingsPath As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents txtSettingsLocationType As TextBox
     Friend WithEvents Label6 As Label
@@ -2518,7 +2810,6 @@ Partial Class Main
     Friend WithEvents Label3 As Label
     Friend WithEvents btnProject As Button
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents Timer1 As Timer
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents trvLibrary As TreeView
     Friend WithEvents SplitContainer1 As SplitContainer
@@ -2692,4 +2983,33 @@ Partial Class Main
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents ContextMenuStrip2 As ContextMenuStrip
     Friend WithEvents ViewUtilityDocumentToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label49 As Label
+    Friend WithEvents txtCurrentDuration As TextBox
+    Friend WithEvents Label50 As Label
+    Friend WithEvents Label51 As Label
+    Friend WithEvents txtTotalDuration As TextBox
+    Friend WithEvents Label52 As Label
+    Friend WithEvents Label53 As Label
+    Friend WithEvents btnParameters As Button
+    Friend WithEvents btnAdd As Button
+    Friend WithEvents txtProNetName As TextBox
+    Friend WithEvents txtParentProject As TextBox
+    Friend WithEvents Label55 As Label
+    Friend WithEvents Label54 As Label
+    Friend WithEvents btnOpenAppDir As Button
+    Friend WithEvents btnOpenSystem As Button
+    Friend WithEvents txtSystemLocationType As TextBox
+    Friend WithEvents txtSystemPath As TextBox
+    Friend WithEvents btnOpenData As Button
+    Friend WithEvents btnOpenSettings As Button
+    Friend WithEvents chkConnect As CheckBox
+    Friend WithEvents btnOpenProject As Button
+    Friend WithEvents txtProjectPath As TextBox
+    Friend WithEvents TabPage7 As TabPage
+    Friend WithEvents WebBrowser1 As WebBrowser
+    Friend WithEvents btnWebPages As Button
+    Friend WithEvents Timer2 As Timer
+    Friend WithEvents ContextMenuStrip3 As ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem1_EditWorkflowTabPage As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem1_ShowStartPageInWorkflowTab As ToolStripMenuItem
 End Class

@@ -14,7 +14,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\My Documents\publish\ADVL_Code_Library_1\</PublishUrl>
+    <PublishUrl>D:\My Documents\publish\ADVL_Information_Library_1\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,7 +24,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -63,16 +63,20 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>DEEE18F8C46C3655941961D18F85D4DDCA72C2F3</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>FC2FE54FCEC31711576474F129CB3D76AFFB0901</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ADVL_Code_Library_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>InfoLib Icon V2.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ADVL_Utilities_Library_1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -117,6 +121,12 @@
     <Compile Include="frmDocumentView.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmHtmlDisplay.Designer.vb">
+      <DependentUpon>frmHtmlDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHtmlDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLicense.Designer.vb">
       <DependentUpon>frmLicense.vb</DependentUpon>
     </Compile>
@@ -133,6 +143,18 @@
       <DependentUpon>frmUtilityDocView.vb</DependentUpon>
     </Compile>
     <Compile Include="frmUtilityDocView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebPage.Designer.vb">
+      <DependentUpon>frmWebPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebPageList.Designer.vb">
+      <DependentUpon>frmWebPageList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebPageList.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.vb">
@@ -168,6 +190,9 @@
     <EmbeddedResource Include="frmDocumentView.resx">
       <DependentUpon>frmDocumentView.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmHtmlDisplay.resx">
+      <DependentUpon>frmHtmlDisplay.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLicense.resx">
       <DependentUpon>frmLicense.vb</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +201,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUtilityDocView.resx">
       <DependentUpon>frmUtilityDocView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebPage.resx">
+      <DependentUpon>frmWebPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebPageList.resx">
+      <DependentUpon>frmWebPageList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
@@ -246,6 +277,10 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InfoLib Icon V2.ico" />
+    <Content Include="InfoLib Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
